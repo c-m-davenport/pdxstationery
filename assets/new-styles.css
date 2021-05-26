@@ -109,7 +109,7 @@ nav .list .links li:hover {
     color: var(--nav-text-color);
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     nav .list .logo {
         display: flex;
         height: 100%;
