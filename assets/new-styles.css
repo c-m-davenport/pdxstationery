@@ -52,12 +52,28 @@ nav {
 }
 
 nav .top {
+    position: relative;
     padding: .2em .5em .2em .5em;
     height: 1.2em;
     color: var(--primary-color);
     background-color: var(--nav-text-color-hov);
     text-align: center;
+    transition: 1s;
+    
+    animation: drop-down-animation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes drop-down-animation {
+    0% {
+        top: -1.2em;
+    }
+    100% {
+        top: 0em;
+     }
+}
+
 
 nav .list {
     display: inline-flex;
@@ -109,7 +125,7 @@ nav .list .links li:hover {
     color: var(--nav-text-color);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     nav .list .logo {
         display: flex;
         height: 100%;
