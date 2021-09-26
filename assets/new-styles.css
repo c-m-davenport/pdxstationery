@@ -149,6 +149,7 @@ nav .list .links li:hover {
 
 .content {
     background-color: var(--content-background-color);
+    border-radius: 1em;
     width: 100%;
 }
 
